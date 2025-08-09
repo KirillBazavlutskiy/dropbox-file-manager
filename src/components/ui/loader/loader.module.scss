@@ -1,0 +1,88 @@
+@import '@/styles/helpers/helpers-all.scss';
+
+$loader_indent: 3rem;
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(240, 240, 240, 0.1);
+}
+
+.icon {
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+
+  background-color: var(--light);
+
+  padding: 3rem;
+  border-radius: 2rem;
+
+  transform: translateX(-50%);
+}
+
+.spinner {
+  font-size: 6rem;
+
+  color: var(--accent);
+  animation: spin $base_duration * 3 linear infinite;
+}
+
+.enter {
+  opacity: 0;
+
+  .icon {
+    opacity: 0;
+    transform: translate(-50%, $loader_indent);
+  }
+}
+
+.enterActive {
+  opacity: 1;
+  transition: opacity $base_transition;
+
+  .icon {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: opacity $base_transition, transform $base_transition;
+  }
+}
+
+.exit {
+  opacity: 1;
+
+  .icon {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.exitActive {
+  opacity: 0;
+  transition: opacity $base_transition;
+
+  .icon {
+    opacity: 0;
+    transform: translate(-50%, $loader_indent);
+    transition: opacity $base_transition, transform $base_transition;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

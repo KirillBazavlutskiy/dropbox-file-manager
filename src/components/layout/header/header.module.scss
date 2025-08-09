@@ -1,0 +1,32 @@
+@import '@/styles/helpers/helpers-all.scss';
+
+.wrapper {
+  @include z-index(header);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--gray-1);
+
+  padding: 2.2rem var(--gl-hr-indent) 2rem;
+  border-bottom: 1px solid var(--gray-3);
+  height: var(--height-header);
+}
+
+.container {
+  width: 100%;
+  max-width: $page_width;
+
+  display: flex;
+  align-items: center;
+}
+
+.container h1.title {
+  font-weight: 600;
+}

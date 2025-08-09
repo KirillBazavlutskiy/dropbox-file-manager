@@ -1,0 +1,49 @@
+@import '@/styles/helpers/helpers-all.scss';
+
+.description {
+	display: block;
+
+	&.p1 {
+		@include p1;
+	}
+
+	&.p1_secondary {
+		@include p1_secondary;
+	}
+
+	&.p2 {
+		@include p2;
+	}
+
+	&.p2_secondary {
+		@include p2_secondary;
+	}
+
+	&.p3 {
+		@include p3;
+	}
+
+	&.p3_secondary {
+		@include p3_secondary;
+	}
+
+	&.p3_tertiary {
+		@include p3_tertiary;
+	}
+
+	&.p4 {
+		@include p4;
+	}
+
+	&.p5 {
+		@include p5;
+	}
+
+	&.p6 {
+		@include p6;
+	}
+
+	&.p6_secondary {
+		@include p6_secondary;
+	}
+}

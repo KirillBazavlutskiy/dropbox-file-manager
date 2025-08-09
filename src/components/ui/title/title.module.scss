@@ -1,0 +1,43 @@
+@import '@/styles/helpers/helpers-all.scss';
+
+.title {
+	&.h1Size {
+		@include h1;
+	}
+
+	&.h2Size {
+		@include h2;
+	}
+
+	&.h3Size {
+		@include h3;
+	}
+
+	&.h3SecondarySize {
+		@include h3_secondary;
+	}
+
+	&.h4Size {
+		@include h4;
+	}
+
+	&.h4SecondarySize {
+		@include h4_secondary;
+	}
+
+	&.h5Size {
+		@include h5;
+	}
+
+	&.h5SecondarySize {
+		@include h5_secondary;
+	}
+
+	&.h6Size {
+		@include h6;
+	}
+
+	&.h6SecondarySize {
+		@include h6_secondary;
+	}
+}

@@ -1,0 +1,27 @@
+//---------------------------------------------z-index
+$z-index: (
+	popup: 110,
+	header: 100,
+	footer: 100,
+	filter: 109,
+	cookie: 111,
+);
+//---------------------------------------------z-index###
+//---------------------------------------------breakpoints
+$desktop_xl: 1920px;
+$desktop: 1440px;
+$desktop_min: 1200px;
+$tablet_max: 1024px;
+$tablet_min: 768px;
+$mobile_max: 640px;
+$mobile_min: 480px;
+$mobile: 375px;
+//---------------------------------------------breakpoints###
+$base_font_size: 1.6rem;
+$page_width: 117.2rem;
+$gl_radius: 10rem;
+
+// $base_ease: cubic-bezier(0.28, 0, 0.49, 1);
+$base_ease: ease-in-out;
+$base_duration: 0.3s;
+$base_transition: $base_duration $base_ease;

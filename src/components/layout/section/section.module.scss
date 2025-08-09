@@ -1,0 +1,11 @@
+@import "@/styles/helpers/helpers-all.scss";
+
+.section {
+	padding: var(--gl-vr-indent) var(--gl-hr-indent);
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: $page_width;
+}

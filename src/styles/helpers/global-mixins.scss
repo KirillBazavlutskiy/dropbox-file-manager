@@ -1,0 +1,57 @@
+@use 'sass:math';
+
+@function z-index($key) {
+	@return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+	z-index: z-index($key);
+}
+
+@function math($val_1, $val_2) {
+	@return math.div($val_1, $val_2);
+}
+
+@mixin d3() {
+	will-change: transform;
+	transform: translateZ(0);
+}
+
+@mixin bp($width, $value: max) {
+	@if $value ==min {
+		@media screen and (min-width: $width) {
+			@content;
+		}
+	}
+
+	@else if $value ==max {
+		@media screen and (max-width: $width) {
+			@content;
+		}
+	}
+
+	@else {
+		@media (max-width: $width) and (min-width: $value) {
+			@content;
+		}
+	}
+}
+
+@mixin flex_block($flex-direction: row, $flex-wrap: wrap, $content: space-between, $align-items: flex-start, $align-content: flex-start) {
+	display: flex;
+	flex-direction: $flex-direction;
+	flex-wrap: $flex-wrap;
+	justify-content: $content;
+	align-content: $align-content;
+	align-items: $align-items;
+}
+
+@mixin block_border() {
+	border: 1px solid var(--border-color);
+}
+
+@mixin appearance($value: button) {
+	-moz-appearance: $value;
+	-webkit-appearance: $value;
+	appearance: $value;
+}
