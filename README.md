@@ -20,7 +20,12 @@ VITE_DROPBOX_APP_ACCESS_KEY={YOUR_ACCESS_TOKEN}
 ```
 Replace `{YOUR_ACCESS_TOKEN}` with the token you generated.
 
-## 3. Run the Application
+## 3. Install modules
+```bash
+npm install
+```
+
+## 4. Run the Application
 - **Development mode**
 ```bash
 npm run dev
